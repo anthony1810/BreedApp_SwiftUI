@@ -71,14 +71,14 @@ Browse Breeds: Explore a list of different dog breeds and learn more about each 
 
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-Fork the repository.
-Create a new branch:
+1. Fork the repository.
+2. Create a new branch:
 ```git checkout -b feature/your-feature-name```
-Commit your changes:
+3. Commit your changes:
 ```git commit -m 'Add some feature'```
-Push to the branch:
+4. Push to the branch:
 ```git push origin feature/your-feature-name```
-Create a Pull Request.
+5. Create a Pull Request.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
@@ -86,8 +86,8 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ## Acknowledgements
 
 Thanks to Apurin.me for the insightful article on the SwiftUI First design pattern.
-Contact
 
+## Contact
 For any inquiries or feedback, feel free to reach out to [qquang269@gmail.com].
 
 Happy coding!
