@@ -7,18 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F35F6432C0B1DA300483FE4 /* BreedListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35F6422C0B1DA300483FE4 /* BreedListRow.swift */; };
+		2F3BA3162C08358900C9DBF5 /* BreedListFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BA3152C08358900C9DBF5 /* BreedListFlow.swift */; };
+		2F3BA3182C08380000C9DBF5 /* RealmBreedListScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BA3172C08380000C9DBF5 /* RealmBreedListScreenFactory.swift */; };
+		2F3BA31B2C0838E400C9DBF5 /* RealmBreedListScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BA31A2C0838E400C9DBF5 /* RealmBreedListScreenData.swift */; };
 		2F4EA88F2BFB0310009707FD /* MVPatternApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA88E2BFB0310009707FD /* MVPatternApp.swift */; };
 		2F4EA8912BFB0310009707FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8902BFB0310009707FD /* ContentView.swift */; };
 		2F4EA8932BFB0311009707FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4EA8922BFB0311009707FD /* Assets.xcassets */; };
 		2F4EA8962BFB0311009707FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4EA8952BFB0311009707FD /* Preview Assets.xcassets */; };
+		2F4EA8A22BFB05E3009707FD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8A12BFB05E3009707FD /* API.swift */; };
+		2F4EA8A42BFB05F1009707FD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8A32BFB05F1009707FD /* APIClient.swift */; };
+		2F4EA8A62BFB0606009707FD /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8A52BFB0606009707FD /* APIRequests.swift */; };
+		2F4EA8A82BFB0612009707FD /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8A72BFB0612009707FD /* APIResponse.swift */; };
+		2F4EA8AB2BFB0B4B009707FD /* BreedListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8AA2BFB0B4B009707FD /* BreedListRequest.swift */; };
+		2F4EA8AE2BFB31FD009707FD /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8AD2BFB31FD009707FD /* Breed.swift */; };
+		2F4EA8B02BFB320B009707FD /* BreedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8AF2BFB320B009707FD /* BreedList.swift */; };
+		2F4EA8B22BFB3221009707FD /* SubBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8B12BFB3221009707FD /* SubBreed.swift */; };
+		2F4EA8B72BFB39D8009707FD /* ViewInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8B62BFB39D8009707FD /* ViewInjectable.swift */; };
+		2F4EA8B92BFB3B72009707FD /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8B82BFB3B72009707FD /* Dependency.swift */; };
+		2F4EA8BB2BFB3BF2009707FD /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8BA2BFB3BF2009707FD /* DependencyContainer.swift */; };
+		2F4EA8BD2BFB4527009707FD /* MockDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8BC2BFB4527009707FD /* MockDependencyContainer.swift */; };
+		2F4EA8C12BFB4F26009707FD /* AppActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8C02BFB4F26009707FD /* AppActions.swift */; };
+		2F4EA8C32BFB4F36009707FD /* AppAction+BreedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8C22BFB4F36009707FD /* AppAction+BreedList.swift */; };
+		2F4EA8C52BFB4F48009707FD /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8C42BFB4F48009707FD /* AppContainer.swift */; };
+		2F4EA8C72BFB4F54009707FD /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8C62BFB4F54009707FD /* AppDependency.swift */; };
+		2F4EA8C92BFB4F63009707FD /* MockAppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8C82BFB4F63009707FD /* MockAppContainer.swift */; };
+		2F4EA8CC2BFB5017009707FD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8CB2BFB5017009707FD /* AppState.swift */; };
+		2F4EA8CE2BFB504B009707FD /* AppState+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8CD2BFB504B009707FD /* AppState+ErrorAlert.swift */; };
+		2F4EA8D02BFB5098009707FD /* DisplayableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8CF2BFB5098009707FD /* DisplayableError.swift */; };
+		2F7867DE2C00D016006581A7 /* BreedsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7867DD2C00D016006581A7 /* BreedsListService.swift */; };
+		2F7867E62C00DDA9006581A7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F7867E52C00DDA9006581A7 /* RealmSwift */; };
+		2F7867E82C00DFF5006581A7 /* RealmBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7867E72C00DFF5006581A7 /* RealmBreed.swift */; };
+		2F7867EA2C00DFFF006581A7 /* RealmBreedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7867E92C00DFFF006581A7 /* RealmBreedList.swift */; };
+		2FA6936F2C02E7DF00BA3FD9 /* BreedListScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6936E2C02E7DF00BA3FD9 /* BreedListScreenData.swift */; };
+		2FA693712C02E85700BA3FD9 /* BreedListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA693702C02E85700BA3FD9 /* BreedListItem.swift */; };
+		2FA693732C02E8E700BA3FD9 /* BreedListScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA693722C02E8E700BA3FD9 /* BreedListScreenFactory.swift */; };
+		2FA693762C02EB4200BA3FD9 /* WithProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA693752C02EB4200BA3FD9 /* WithProperty.swift */; };
+		2FA693782C02EB6600BA3FD9 /* BreedListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA693772C02EB6600BA3FD9 /* BreedListScreen.swift */; };
+		2FA6937A2C02EE4B00BA3FD9 /* ConcreteBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA693792C02EE4B00BA3FD9 /* ConcreteBreed.swift */; };
+		2FA98D792BFF87D10003A758 /* TabbarFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA98D782BFF87D10003A758 /* TabbarFlow.swift */; };
+		2FA98D7B2BFF8C7F0003A758 /* MVLiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA98D7A2BFF8C7F0003A758 /* MVLiveApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F35F6422C0B1DA300483FE4 /* BreedListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListRow.swift; sourceTree = "<group>"; };
+		2F3BA3152C08358900C9DBF5 /* BreedListFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListFlow.swift; sourceTree = "<group>"; };
+		2F3BA3172C08380000C9DBF5 /* RealmBreedListScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreedListScreenFactory.swift; sourceTree = "<group>"; };
+		2F3BA31A2C0838E400C9DBF5 /* RealmBreedListScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreedListScreenData.swift; sourceTree = "<group>"; };
 		2F4EA88B2BFB0310009707FD /* MVPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4EA88E2BFB0310009707FD /* MVPatternApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPatternApp.swift; sourceTree = "<group>"; };
 		2F4EA8902BFB0310009707FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F4EA8922BFB0311009707FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4EA8952BFB0311009707FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F4EA8A12BFB05E3009707FD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2F4EA8A32BFB05F1009707FD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		2F4EA8A52BFB0606009707FD /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
+		2F4EA8A72BFB0612009707FD /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		2F4EA8AA2BFB0B4B009707FD /* BreedListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListRequest.swift; sourceTree = "<group>"; };
+		2F4EA8AD2BFB31FD009707FD /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		2F4EA8AF2BFB320B009707FD /* BreedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedList.swift; sourceTree = "<group>"; };
+		2F4EA8B12BFB3221009707FD /* SubBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubBreed.swift; sourceTree = "<group>"; };
+		2F4EA8B62BFB39D8009707FD /* ViewInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInjectable.swift; sourceTree = "<group>"; };
+		2F4EA8B82BFB3B72009707FD /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		2F4EA8BA2BFB3BF2009707FD /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		2F4EA8BC2BFB4527009707FD /* MockDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDependencyContainer.swift; sourceTree = "<group>"; };
+		2F4EA8C02BFB4F26009707FD /* AppActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppActions.swift; sourceTree = "<group>"; };
+		2F4EA8C22BFB4F36009707FD /* AppAction+BreedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppAction+BreedList.swift"; sourceTree = "<group>"; };
+		2F4EA8C42BFB4F48009707FD /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		2F4EA8C62BFB4F54009707FD /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		2F4EA8C82BFB4F63009707FD /* MockAppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppContainer.swift; sourceTree = "<group>"; };
+		2F4EA8CB2BFB5017009707FD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2F4EA8CD2BFB504B009707FD /* AppState+ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+ErrorAlert.swift"; sourceTree = "<group>"; };
+		2F4EA8CF2BFB5098009707FD /* DisplayableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayableError.swift; sourceTree = "<group>"; };
+		2F7867DD2C00D016006581A7 /* BreedsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListService.swift; sourceTree = "<group>"; };
+		2F7867E72C00DFF5006581A7 /* RealmBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreed.swift; sourceTree = "<group>"; };
+		2F7867E92C00DFFF006581A7 /* RealmBreedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreedList.swift; sourceTree = "<group>"; };
+		2FA6936E2C02E7DF00BA3FD9 /* BreedListScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListScreenData.swift; sourceTree = "<group>"; };
+		2FA693702C02E85700BA3FD9 /* BreedListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListItem.swift; sourceTree = "<group>"; };
+		2FA693722C02E8E700BA3FD9 /* BreedListScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListScreenFactory.swift; sourceTree = "<group>"; };
+		2FA693752C02EB4200BA3FD9 /* WithProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithProperty.swift; sourceTree = "<group>"; };
+		2FA693772C02EB6600BA3FD9 /* BreedListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListScreen.swift; sourceTree = "<group>"; };
+		2FA693792C02EE4B00BA3FD9 /* ConcreteBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteBreed.swift; sourceTree = "<group>"; };
+		2FA98D782BFF87D10003A758 /* TabbarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFlow.swift; sourceTree = "<group>"; };
+		2FA98D7A2BFF8C7F0003A758 /* MVLiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLiveApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +97,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F7867E62C00DDA9006581A7 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F3BA3142C08354C00C9DBF5 /* BreedList */ = {
+			isa = PBXGroup;
+			children = (
+				2F3BA3192C0838AF00C9DBF5 /* ScreenData */,
+				2F3BA3152C08358900C9DBF5 /* BreedListFlow.swift */,
+				2FA693722C02E8E700BA3FD9 /* BreedListScreenFactory.swift */,
+				2F3BA3172C08380000C9DBF5 /* RealmBreedListScreenFactory.swift */,
+				2FA693772C02EB6600BA3FD9 /* BreedListScreen.swift */,
+				2F35F6422C0B1DA300483FE4 /* BreedListRow.swift */,
+			);
+			path = BreedList;
+			sourceTree = "<group>";
+		};
+		2F3BA3192C0838AF00C9DBF5 /* ScreenData */ = {
+			isa = PBXGroup;
+			children = (
+				2FA6936E2C02E7DF00BA3FD9 /* BreedListScreenData.swift */,
+				2F3BA31A2C0838E400C9DBF5 /* RealmBreedListScreenData.swift */,
+			);
+			path = ScreenData;
+			sourceTree = "<group>";
+		};
 		2F4EA8822BFB0310009707FD = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				2F4EA88E2BFB0310009707FD /* MVPatternApp.swift */,
-				2F4EA8902BFB0310009707FD /* ContentView.swift */,
+				2FA98D7A2BFF8C7F0003A758 /* MVLiveApp.swift */,
+				2F4EA89F2BFB0585009707FD /* Infrastructure */,
+				2F4EA89E2BFB057E009707FD /* Service */,
+				2F4EA89D2BFB0576009707FD /* UI */,
+				2F4EA89C2BFB0569009707FD /* Core */,
 				2F4EA8922BFB0311009707FD /* Assets.xcassets */,
 				2F4EA8942BFB0311009707FD /* Preview Content */,
 			);
@@ -65,6 +163,143 @@
 				2F4EA8952BFB0311009707FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F4EA89C2BFB0569009707FD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2FA693742C02EB2A00BA3FD9 /* Utility */,
+				2F4EA8B52BFB39C5009707FD /* Dependency */,
+				2F4EA8AC2BFB31DD009707FD /* Entities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2F4EA89D2BFB0576009707FD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2FA98D772BFF87B80003A758 /* Flow */,
+				2F4EA8CA2BFB4FF4009707FD /* AppDependency */,
+				2F4EA8902BFB0310009707FD /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2F4EA89E2BFB057E009707FD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2F7867DD2C00D016006581A7 /* BreedsListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2F4EA89F2BFB0585009707FD /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EA8B42BFB37EE009707FD /* Database */,
+				2F4EA8A02BFB05CD009707FD /* API */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		2F4EA8A02BFB05CD009707FD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EA8A92BFB0B0C009707FD /* Request */,
+				2F4EA8A12BFB05E3009707FD /* API.swift */,
+				2F4EA8A32BFB05F1009707FD /* APIClient.swift */,
+				2F4EA8A52BFB0606009707FD /* APIRequests.swift */,
+				2F4EA8A72BFB0612009707FD /* APIResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2F4EA8A92BFB0B0C009707FD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EA8AA2BFB0B4B009707FD /* BreedListRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2F4EA8AC2BFB31DD009707FD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EA8AD2BFB31FD009707FD /* Breed.swift */,
+				2F4EA8B12BFB3221009707FD /* SubBreed.swift */,
+				2F4EA8AF2BFB320B009707FD /* BreedList.swift */,
+				2F4EA8CF2BFB5098009707FD /* DisplayableError.swift */,
+				2FA693702C02E85700BA3FD9 /* BreedListItem.swift */,
+				2FA693792C02EE4B00BA3FD9 /* ConcreteBreed.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2F4EA8B42BFB37EE009707FD /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2F7867E72C00DFF5006581A7 /* RealmBreed.swift */,
+				2F7867E92C00DFFF006581A7 /* RealmBreedList.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		2F4EA8B52BFB39C5009707FD /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EA8B62BFB39D8009707FD /* ViewInjectable.swift */,
+				2F4EA8B82BFB3B72009707FD /* Dependency.swift */,
+				2F4EA8BA2BFB3BF2009707FD /* DependencyContainer.swift */,
+				2F4EA8BC2BFB4527009707FD /* MockDependencyContainer.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		2F4EA8BE2BFB4EEA009707FD /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EA8C02BFB4F26009707FD /* AppActions.swift */,
+				2F4EA8C22BFB4F36009707FD /* AppAction+BreedList.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		2F4EA8BF2BFB4EF4009707FD /* State */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EA8CB2BFB5017009707FD /* AppState.swift */,
+				2F4EA8CD2BFB504B009707FD /* AppState+ErrorAlert.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		2F4EA8CA2BFB4FF4009707FD /* AppDependency */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EA8C42BFB4F48009707FD /* AppContainer.swift */,
+				2F4EA8C62BFB4F54009707FD /* AppDependency.swift */,
+				2F4EA8C82BFB4F63009707FD /* MockAppContainer.swift */,
+				2F4EA8BF2BFB4EF4009707FD /* State */,
+				2F4EA8BE2BFB4EEA009707FD /* Actions */,
+			);
+			path = AppDependency;
+			sourceTree = "<group>";
+		};
+		2FA693742C02EB2A00BA3FD9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2FA693752C02EB4200BA3FD9 /* WithProperty.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2FA98D772BFF87B80003A758 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				2F3BA3142C08354C00C9DBF5 /* BreedList */,
+				2FA98D782BFF87D10003A758 /* TabbarFlow.swift */,
+			);
+			path = Flow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +318,9 @@
 			dependencies = (
 			);
 			name = MVPattern;
+			packageProductDependencies = (
+				2F7867E52C00DDA9006581A7 /* RealmSwift */,
+			);
 			productName = MVPattern;
 			productReference = 2F4EA88B2BFB0310009707FD /* MVPattern.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +349,9 @@
 				Base,
 			);
 			mainGroup = 2F4EA8822BFB0310009707FD;
+			packageReferences = (
+				2F7867E42C00DDA9006581A7 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 2F4EA88C2BFB0310009707FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +378,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4EA8AE2BFB31FD009707FD /* Breed.swift in Sources */,
+				2F4EA8A42BFB05F1009707FD /* APIClient.swift in Sources */,
+				2F7867EA2C00DFFF006581A7 /* RealmBreedList.swift in Sources */,
+				2F4EA8C52BFB4F48009707FD /* AppContainer.swift in Sources */,
+				2FA6936F2C02E7DF00BA3FD9 /* BreedListScreenData.swift in Sources */,
+				2F3BA3182C08380000C9DBF5 /* RealmBreedListScreenFactory.swift in Sources */,
+				2F3BA31B2C0838E400C9DBF5 /* RealmBreedListScreenData.swift in Sources */,
+				2F4EA8AB2BFB0B4B009707FD /* BreedListRequest.swift in Sources */,
 				2F4EA8912BFB0310009707FD /* ContentView.swift in Sources */,
+				2F4EA8BD2BFB4527009707FD /* MockDependencyContainer.swift in Sources */,
+				2F4EA8C72BFB4F54009707FD /* AppDependency.swift in Sources */,
+				2F4EA8A82BFB0612009707FD /* APIResponse.swift in Sources */,
+				2FA6937A2C02EE4B00BA3FD9 /* ConcreteBreed.swift in Sources */,
+				2F4EA8A62BFB0606009707FD /* APIRequests.swift in Sources */,
+				2F7867DE2C00D016006581A7 /* BreedsListService.swift in Sources */,
+				2FA693712C02E85700BA3FD9 /* BreedListItem.swift in Sources */,
+				2FA693732C02E8E700BA3FD9 /* BreedListScreenFactory.swift in Sources */,
+				2FA693782C02EB6600BA3FD9 /* BreedListScreen.swift in Sources */,
+				2F4EA8C92BFB4F63009707FD /* MockAppContainer.swift in Sources */,
+				2F4EA8BB2BFB3BF2009707FD /* DependencyContainer.swift in Sources */,
+				2F4EA8D02BFB5098009707FD /* DisplayableError.swift in Sources */,
+				2F4EA8CC2BFB5017009707FD /* AppState.swift in Sources */,
+				2F3BA3162C08358900C9DBF5 /* BreedListFlow.swift in Sources */,
+				2FA98D7B2BFF8C7F0003A758 /* MVLiveApp.swift in Sources */,
+				2FA693762C02EB4200BA3FD9 /* WithProperty.swift in Sources */,
+				2F4EA8B92BFB3B72009707FD /* Dependency.swift in Sources */,
+				2F4EA8B72BFB39D8009707FD /* ViewInjectable.swift in Sources */,
+				2F4EA8CE2BFB504B009707FD /* AppState+ErrorAlert.swift in Sources */,
+				2FA98D792BFF87D10003A758 /* TabbarFlow.swift in Sources */,
 				2F4EA88F2BFB0310009707FD /* MVPatternApp.swift in Sources */,
+				2F4EA8B22BFB3221009707FD /* SubBreed.swift in Sources */,
+				2F4EA8C32BFB4F36009707FD /* AppAction+BreedList.swift in Sources */,
+				2F7867E82C00DFF5006581A7 /* RealmBreed.swift in Sources */,
+				2F4EA8B02BFB320B009707FD /* BreedList.swift in Sources */,
+				2F35F6432C0B1DA300483FE4 /* BreedListRow.swift in Sources */,
+				2F4EA8A22BFB05E3009707FD /* API.swift in Sources */,
+				2F4EA8C12BFB4F26009707FD /* AppActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F7867E42C00DDA9006581A7 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F7867E52C00DDA9006581A7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F7867E42C00DDA9006581A7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F4EA8832BFB0310009707FD /* Project object */;
 }

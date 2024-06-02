@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct APIResponse<Message: Decodable>: Decodable {
-    let message: Message
+struct APIResponse<Data: Decodable>: Decodable {
+    let message: Data
     let status: String
 }
