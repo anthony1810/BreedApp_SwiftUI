@@ -30,7 +30,8 @@ private struct _Content<Container: AppContainer>: View {
             .navigationDestination(for: BreedListScreenDestination.self) { destination in
                 switch destination {
                 case let .breedImage(breed):
-                    Text("\(breed)")
+                    DogImageScreen(image: DogImage.breed(breed))
+                        .navigationTitle(breed.formatted(.breedName))
                 }
             }
         }

@@ -26,7 +26,9 @@ class APIClient {
     
     func execute<Request: APIRequest>(_ request: Request)
     async throws -> Request.Response {
+        print("-> execute request \(request.path)")
         let (data, _) = try await session.data(for: request.makeURLRequest(configuration: self.configuration))
-        return try request.decode(data: data)
+        let decoded = try request.decode(data: data)
+        return decoded
     }
 }

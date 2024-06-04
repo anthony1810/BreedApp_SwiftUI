@@ -31,6 +31,7 @@ public final class MVLiveApp: AppContainer {
     
     // Services
     let breedListService: BreedsListService
+    let dogImageService: DogImageService
     
     init(configuration: Configuration) {
         self.configuration = configuration
@@ -47,9 +48,11 @@ public final class MVLiveApp: AppContainer {
             realmConfiguration: self.configuration.realmConfig,
             errorAlert: app.state.errorAlert
         )
+        self.dogImageService = .init(api: api)
         
         // init actions
         self.app.actions.breedList.refresh = breedListService.fetchList
+        self.app.actions.dogImage.getImage = self.dogImageService.getImage(_:)
     }
     
     func makeBreedListScreenFactory() -> some BreedListScreenFactory {

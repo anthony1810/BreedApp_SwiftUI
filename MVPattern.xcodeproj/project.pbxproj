@@ -45,6 +45,10 @@
 		2F53204F2C0DCDC4001FD9FB /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53204E2C0DCDC4001FD9FB /* OnFirstAppear.swift */; };
 		2F70FFD02C0F01AF00D471A6 /* DogImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFCF2C0F01AF00D471A6 /* DogImageView.swift */; };
 		2F70FFD32C0F026900D471A6 /* TaskFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFD22C0F026900D471A6 /* TaskFailedView.swift */; };
+		2F70FFD52C0F09DF00D471A6 /* DogImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFD42C0F09DF00D471A6 /* DogImageService.swift */; };
+		2F70FFD72C0F09EC00D471A6 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFD62C0F09EC00D471A6 /* FavoritesService.swift */; };
+		2F70FFD92C0F0ABC00D471A6 /* RandomImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFD82C0F0ABC00D471A6 /* RandomImageRequest.swift */; };
+		2F70FFDB2C0F0D7A00D471A6 /* BreedImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFDA2C0F0D7A00D471A6 /* BreedImageRequest.swift */; };
 		2F7867DE2C00D016006581A7 /* BreedsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7867DD2C00D016006581A7 /* BreedsListService.swift */; };
 		2F7867E62C00DDA9006581A7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F7867E52C00DDA9006581A7 /* RealmSwift */; };
 		2F7867E82C00DFF5006581A7 /* RealmBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7867E72C00DFF5006581A7 /* RealmBreed.swift */; };
@@ -99,6 +103,10 @@
 		2F53204E2C0DCDC4001FD9FB /* OnFirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppear.swift; sourceTree = "<group>"; };
 		2F70FFCF2C0F01AF00D471A6 /* DogImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageView.swift; sourceTree = "<group>"; };
 		2F70FFD22C0F026900D471A6 /* TaskFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFailedView.swift; sourceTree = "<group>"; };
+		2F70FFD42C0F09DF00D471A6 /* DogImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageService.swift; sourceTree = "<group>"; };
+		2F70FFD62C0F09EC00D471A6 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
+		2F70FFD82C0F0ABC00D471A6 /* RandomImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageRequest.swift; sourceTree = "<group>"; };
+		2F70FFDA2C0F0D7A00D471A6 /* BreedImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageRequest.swift; sourceTree = "<group>"; };
 		2F7867DD2C00D016006581A7 /* BreedsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListService.swift; sourceTree = "<group>"; };
 		2F7867E72C00DFF5006581A7 /* RealmBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreed.swift; sourceTree = "<group>"; };
 		2F7867E92C00DFFF006581A7 /* RealmBreedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreedList.swift; sourceTree = "<group>"; };
@@ -225,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				2F7867DD2C00D016006581A7 /* BreedsListService.swift */,
+				2F70FFD42C0F09DF00D471A6 /* DogImageService.swift */,
+				2F70FFD62C0F09EC00D471A6 /* FavoritesService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				2F4EA8AA2BFB0B4B009707FD /* BreedListRequest.swift */,
+				2F70FFD82C0F0ABC00D471A6 /* RandomImageRequest.swift */,
+				2F70FFDA2C0F0D7A00D471A6 /* BreedImageRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -457,6 +469,7 @@
 				2F3BA31B2C0838E400C9DBF5 /* RealmBreedListScreenData.swift in Sources */,
 				2F4EA8AB2BFB0B4B009707FD /* BreedListRequest.swift in Sources */,
 				2F4EA8BD2BFB4527009707FD /* MockDependencyContainer.swift in Sources */,
+				2F70FFDB2C0F0D7A00D471A6 /* BreedImageRequest.swift in Sources */,
 				2F4EA8C72BFB4F54009707FD /* AppDependency.swift in Sources */,
 				2F4EA8A82BFB0612009707FD /* APIResponse.swift in Sources */,
 				2F5320432C0DBC75001FD9FB /* LoadingState.swift in Sources */,
@@ -472,6 +485,7 @@
 				2F4EA8BB2BFB3BF2009707FD /* DependencyContainer.swift in Sources */,
 				2F4EA8D02BFB5098009707FD /* DisplayableError.swift in Sources */,
 				2F4EA8CC2BFB5017009707FD /* AppState.swift in Sources */,
+				2F70FFD92C0F0ABC00D471A6 /* RandomImageRequest.swift in Sources */,
 				2F3BA3162C08358900C9DBF5 /* BreedListFlow.swift in Sources */,
 				2FA98D7B2BFF8C7F0003A758 /* MVLiveApp.swift in Sources */,
 				2FA693762C02EB4200BA3FD9 /* WithProperty.swift in Sources */,
@@ -483,6 +497,7 @@
 				2F53204F2C0DCDC4001FD9FB /* OnFirstAppear.swift in Sources */,
 				2F70FFD32C0F026900D471A6 /* TaskFailedView.swift in Sources */,
 				2F53204D2C0DCC32001FD9FB /* AppActions+Favorites.swift in Sources */,
+				2F70FFD72C0F09EC00D471A6 /* FavoritesService.swift in Sources */,
 				2FA98D792BFF87D10003A758 /* TabbarFlow.swift in Sources */,
 				2F4EA88F2BFB0310009707FD /* MVPatternApp.swift in Sources */,
 				2F4EA8B22BFB3221009707FD /* SubBreed.swift in Sources */,
@@ -494,6 +509,7 @@
 				2F4EA8A22BFB05E3009707FD /* API.swift in Sources */,
 				2F4EA8C12BFB4F26009707FD /* AppActions.swift in Sources */,
 				2F5320472C0DBEEE001FD9FB /* AppActions+DogImage.swift in Sources */,
+				2F70FFD52C0F09DF00D471A6 /* DogImageService.swift in Sources */,
 				2F5320452C0DBD80001FD9FB /* DogImageResouce.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
