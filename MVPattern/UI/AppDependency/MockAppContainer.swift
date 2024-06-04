@@ -11,9 +11,13 @@ import SwiftUI
 final class MockAppContainer: MockDependencyContainer, AppContainer {
     struct Configuration {
         var breeds: BreedList
+        var defaultImage: DogImageResouce?
         
-        init(breeds: BreedList = .mock) {
+        init(breeds: BreedList = .mock,
+             defaultImage: DogImageResouce? = .mock
+        ) {
             self.breeds = breeds
+            self.defaultImage = defaultImage
         }
     }
     
@@ -23,6 +27,13 @@ final class MockAppContainer: MockDependencyContainer, AppContainer {
     init(configuration: Configuration) {
         self.configuration = configuration
         self.app = .init(state: .init(), actions: .init())
+        
+        if let resource = configuration.defaultImage {
+            app.actions.dogImage.getImage = {_ in
+                try? await Task.sleep(for: .seconds(1))
+                return resource
+            }
+        }
     }
     
     func inject(content: Content) -> some View {

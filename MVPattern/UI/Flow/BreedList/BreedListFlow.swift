@@ -8,8 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct BreedListFlow<Container: AppContainer> : View {
-    
+struct BreedListFlow<Container: AppContainer>: View {
     let container: Container
     var body: some View {
         _Content(flow: self)
@@ -18,10 +17,28 @@ struct BreedListFlow<Container: AppContainer> : View {
 }
 
 private struct _Content<Container: AppContainer>: View {
-    
     let flow: BreedListFlow<Container>
     
     var body: some View {
-        BreedListScreen(factory: flow.container.makeBreedListScreenFactory())
+        NavigationStack {
+            BreedListScreen(
+                factory: flow
+                    .container
+                    .makeBreedListScreenFactory()
+            )
+            .navigationTitle("Breeds")
+            .navigationDestination(for: BreedListScreenDestination.self) { destination in
+                switch destination {
+                case let .breedImage(breed):
+                    Text("\(breed)")
+                }
+            }
+        }
     }
 }
+    
+// MARK: - Navigations
+enum BreedListScreenDestination: Hashable {
+    case breedImage(breed: ConcreteBreed)
+}
+    

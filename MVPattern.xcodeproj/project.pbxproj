@@ -12,7 +12,6 @@
 		2F3BA3182C08380000C9DBF5 /* RealmBreedListScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BA3172C08380000C9DBF5 /* RealmBreedListScreenFactory.swift */; };
 		2F3BA31B2C0838E400C9DBF5 /* RealmBreedListScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BA31A2C0838E400C9DBF5 /* RealmBreedListScreenData.swift */; };
 		2F4EA88F2BFB0310009707FD /* MVPatternApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA88E2BFB0310009707FD /* MVPatternApp.swift */; };
-		2F4EA8912BFB0310009707FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8902BFB0310009707FD /* ContentView.swift */; };
 		2F4EA8932BFB0311009707FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4EA8922BFB0311009707FD /* Assets.xcassets */; };
 		2F4EA8962BFB0311009707FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4EA8952BFB0311009707FD /* Preview Assets.xcassets */; };
 		2F4EA8A22BFB05E3009707FD /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8A12BFB05E3009707FD /* API.swift */; };
@@ -35,6 +34,17 @@
 		2F4EA8CC2BFB5017009707FD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8CB2BFB5017009707FD /* AppState.swift */; };
 		2F4EA8CE2BFB504B009707FD /* AppState+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8CD2BFB504B009707FD /* AppState+ErrorAlert.swift */; };
 		2F4EA8D02BFB5098009707FD /* DisplayableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4EA8CF2BFB5098009707FD /* DisplayableError.swift */; };
+		2F53203F2C0DBBEB001FD9FB /* DogImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53203E2C0DBBEB001FD9FB /* DogImageScreen.swift */; };
+		2F5320412C0DBC26001FD9FB /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5320402C0DBC26001FD9FB /* DogImage.swift */; };
+		2F5320432C0DBC75001FD9FB /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5320422C0DBC75001FD9FB /* LoadingState.swift */; };
+		2F5320452C0DBD80001FD9FB /* DogImageResouce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5320442C0DBD80001FD9FB /* DogImageResouce.swift */; };
+		2F5320472C0DBEEE001FD9FB /* AppActions+DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5320462C0DBEEE001FD9FB /* AppActions+DogImage.swift */; };
+		2F5320492C0DBFDE001FD9FB /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5320482C0DBFDE001FD9FB /* ErrorMessage.swift */; };
+		2F53204B2C0DC9F8001FD9FB /* DogImageFavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53204A2C0DC9F8001FD9FB /* DogImageFavoriteButton.swift */; };
+		2F53204D2C0DCC32001FD9FB /* AppActions+Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53204C2C0DCC32001FD9FB /* AppActions+Favorites.swift */; };
+		2F53204F2C0DCDC4001FD9FB /* OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53204E2C0DCDC4001FD9FB /* OnFirstAppear.swift */; };
+		2F70FFD02C0F01AF00D471A6 /* DogImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFCF2C0F01AF00D471A6 /* DogImageView.swift */; };
+		2F70FFD32C0F026900D471A6 /* TaskFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFD22C0F026900D471A6 /* TaskFailedView.swift */; };
 		2F7867DE2C00D016006581A7 /* BreedsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7867DD2C00D016006581A7 /* BreedsListService.swift */; };
 		2F7867E62C00DDA9006581A7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F7867E52C00DDA9006581A7 /* RealmSwift */; };
 		2F7867E82C00DFF5006581A7 /* RealmBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7867E72C00DFF5006581A7 /* RealmBreed.swift */; };
@@ -56,7 +66,6 @@
 		2F3BA31A2C0838E400C9DBF5 /* RealmBreedListScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreedListScreenData.swift; sourceTree = "<group>"; };
 		2F4EA88B2BFB0310009707FD /* MVPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4EA88E2BFB0310009707FD /* MVPatternApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPatternApp.swift; sourceTree = "<group>"; };
-		2F4EA8902BFB0310009707FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F4EA8922BFB0311009707FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4EA8952BFB0311009707FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F4EA8A12BFB05E3009707FD /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -79,6 +88,17 @@
 		2F4EA8CB2BFB5017009707FD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2F4EA8CD2BFB504B009707FD /* AppState+ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+ErrorAlert.swift"; sourceTree = "<group>"; };
 		2F4EA8CF2BFB5098009707FD /* DisplayableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayableError.swift; sourceTree = "<group>"; };
+		2F53203E2C0DBBEB001FD9FB /* DogImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageScreen.swift; sourceTree = "<group>"; };
+		2F5320402C0DBC26001FD9FB /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		2F5320422C0DBC75001FD9FB /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		2F5320442C0DBD80001FD9FB /* DogImageResouce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageResouce.swift; sourceTree = "<group>"; };
+		2F5320462C0DBEEE001FD9FB /* AppActions+DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppActions+DogImage.swift"; sourceTree = "<group>"; };
+		2F5320482C0DBFDE001FD9FB /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		2F53204A2C0DC9F8001FD9FB /* DogImageFavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageFavoriteButton.swift; sourceTree = "<group>"; };
+		2F53204C2C0DCC32001FD9FB /* AppActions+Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppActions+Favorites.swift"; sourceTree = "<group>"; };
+		2F53204E2C0DCDC4001FD9FB /* OnFirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnFirstAppear.swift; sourceTree = "<group>"; };
+		2F70FFCF2C0F01AF00D471A6 /* DogImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageView.swift; sourceTree = "<group>"; };
+		2F70FFD22C0F026900D471A6 /* TaskFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFailedView.swift; sourceTree = "<group>"; };
 		2F7867DD2C00D016006581A7 /* BreedsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListService.swift; sourceTree = "<group>"; };
 		2F7867E72C00DFF5006581A7 /* RealmBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreed.swift; sourceTree = "<group>"; };
 		2F7867E92C00DFFF006581A7 /* RealmBreedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreedList.swift; sourceTree = "<group>"; };
@@ -104,15 +124,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F0A69AE2C0CCC21005BBDD5 /* ScreenFactory */ = {
+			isa = PBXGroup;
+			children = (
+				2FA693722C02E8E700BA3FD9 /* BreedListScreenFactory.swift */,
+				2F3BA3172C08380000C9DBF5 /* RealmBreedListScreenFactory.swift */,
+			);
+			path = ScreenFactory;
+			sourceTree = "<group>";
+		};
+		2F0A69AF2C0CCC42005BBDD5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2F70FFCE2C0F018E00D471A6 /* DogImageScreen */,
+				2F70FFCD2C0F018300D471A6 /* BreedListScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		2F3BA3142C08354C00C9DBF5 /* BreedList */ = {
 			isa = PBXGroup;
 			children = (
-				2F3BA3192C0838AF00C9DBF5 /* ScreenData */,
 				2F3BA3152C08358900C9DBF5 /* BreedListFlow.swift */,
-				2FA693722C02E8E700BA3FD9 /* BreedListScreenFactory.swift */,
-				2F3BA3172C08380000C9DBF5 /* RealmBreedListScreenFactory.swift */,
-				2FA693772C02EB6600BA3FD9 /* BreedListScreen.swift */,
-				2F35F6422C0B1DA300483FE4 /* BreedListRow.swift */,
+				2F0A69AF2C0CCC42005BBDD5 /* Screens */,
+				2F0A69AE2C0CCC21005BBDD5 /* ScreenFactory */,
+				2F3BA3192C0838AF00C9DBF5 /* ScreenData */,
 			);
 			path = BreedList;
 			sourceTree = "<group>";
@@ -178,9 +214,9 @@
 		2F4EA89D2BFB0576009707FD /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2FA98D772BFF87B80003A758 /* Flow */,
 				2F4EA8CA2BFB4FF4009707FD /* AppDependency */,
-				2F4EA8902BFB0310009707FD /* ContentView.swift */,
+				2FA98D772BFF87B80003A758 /* Flow */,
+				2F70FFD12C0F025100D471A6 /* Common */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -231,6 +267,10 @@
 				2F4EA8CF2BFB5098009707FD /* DisplayableError.swift */,
 				2FA693702C02E85700BA3FD9 /* BreedListItem.swift */,
 				2FA693792C02EE4B00BA3FD9 /* ConcreteBreed.swift */,
+				2F5320402C0DBC26001FD9FB /* DogImage.swift */,
+				2F5320422C0DBC75001FD9FB /* LoadingState.swift */,
+				2F5320442C0DBD80001FD9FB /* DogImageResouce.swift */,
+				2F5320482C0DBFDE001FD9FB /* ErrorMessage.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -260,6 +300,8 @@
 			children = (
 				2F4EA8C02BFB4F26009707FD /* AppActions.swift */,
 				2F4EA8C22BFB4F36009707FD /* AppAction+BreedList.swift */,
+				2F5320462C0DBEEE001FD9FB /* AppActions+DogImage.swift */,
+				2F53204C2C0DCC32001FD9FB /* AppActions+Favorites.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -285,10 +327,38 @@
 			path = AppDependency;
 			sourceTree = "<group>";
 		};
+		2F70FFCD2C0F018300D471A6 /* BreedListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2FA693772C02EB6600BA3FD9 /* BreedListScreen.swift */,
+				2F35F6422C0B1DA300483FE4 /* BreedListRow.swift */,
+			);
+			path = BreedListScreen;
+			sourceTree = "<group>";
+		};
+		2F70FFCE2C0F018E00D471A6 /* DogImageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2F53203E2C0DBBEB001FD9FB /* DogImageScreen.swift */,
+				2F53204A2C0DC9F8001FD9FB /* DogImageFavoriteButton.swift */,
+				2F70FFCF2C0F01AF00D471A6 /* DogImageView.swift */,
+			);
+			path = DogImageScreen;
+			sourceTree = "<group>";
+		};
+		2F70FFD12C0F025100D471A6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2F70FFD22C0F026900D471A6 /* TaskFailedView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		2FA693742C02EB2A00BA3FD9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				2FA693752C02EB4200BA3FD9 /* WithProperty.swift */,
+				2F53204E2C0DCDC4001FD9FB /* OnFirstAppear.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -296,8 +366,8 @@
 		2FA98D772BFF87B80003A758 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				2F3BA3142C08354C00C9DBF5 /* BreedList */,
 				2FA98D782BFF87D10003A758 /* TabbarFlow.swift */,
+				2F3BA3142C08354C00C9DBF5 /* BreedList */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -386,15 +456,17 @@
 				2F3BA3182C08380000C9DBF5 /* RealmBreedListScreenFactory.swift in Sources */,
 				2F3BA31B2C0838E400C9DBF5 /* RealmBreedListScreenData.swift in Sources */,
 				2F4EA8AB2BFB0B4B009707FD /* BreedListRequest.swift in Sources */,
-				2F4EA8912BFB0310009707FD /* ContentView.swift in Sources */,
 				2F4EA8BD2BFB4527009707FD /* MockDependencyContainer.swift in Sources */,
 				2F4EA8C72BFB4F54009707FD /* AppDependency.swift in Sources */,
 				2F4EA8A82BFB0612009707FD /* APIResponse.swift in Sources */,
+				2F5320432C0DBC75001FD9FB /* LoadingState.swift in Sources */,
 				2FA6937A2C02EE4B00BA3FD9 /* ConcreteBreed.swift in Sources */,
+				2F5320412C0DBC26001FD9FB /* DogImage.swift in Sources */,
 				2F4EA8A62BFB0606009707FD /* APIRequests.swift in Sources */,
 				2F7867DE2C00D016006581A7 /* BreedsListService.swift in Sources */,
 				2FA693712C02E85700BA3FD9 /* BreedListItem.swift in Sources */,
 				2FA693732C02E8E700BA3FD9 /* BreedListScreenFactory.swift in Sources */,
+				2F70FFD02C0F01AF00D471A6 /* DogImageView.swift in Sources */,
 				2FA693782C02EB6600BA3FD9 /* BreedListScreen.swift in Sources */,
 				2F4EA8C92BFB4F63009707FD /* MockAppContainer.swift in Sources */,
 				2F4EA8BB2BFB3BF2009707FD /* DependencyContainer.swift in Sources */,
@@ -403,18 +475,26 @@
 				2F3BA3162C08358900C9DBF5 /* BreedListFlow.swift in Sources */,
 				2FA98D7B2BFF8C7F0003A758 /* MVLiveApp.swift in Sources */,
 				2FA693762C02EB4200BA3FD9 /* WithProperty.swift in Sources */,
+				2F5320492C0DBFDE001FD9FB /* ErrorMessage.swift in Sources */,
+				2F53204B2C0DC9F8001FD9FB /* DogImageFavoriteButton.swift in Sources */,
 				2F4EA8B92BFB3B72009707FD /* Dependency.swift in Sources */,
 				2F4EA8B72BFB39D8009707FD /* ViewInjectable.swift in Sources */,
 				2F4EA8CE2BFB504B009707FD /* AppState+ErrorAlert.swift in Sources */,
+				2F53204F2C0DCDC4001FD9FB /* OnFirstAppear.swift in Sources */,
+				2F70FFD32C0F026900D471A6 /* TaskFailedView.swift in Sources */,
+				2F53204D2C0DCC32001FD9FB /* AppActions+Favorites.swift in Sources */,
 				2FA98D792BFF87D10003A758 /* TabbarFlow.swift in Sources */,
 				2F4EA88F2BFB0310009707FD /* MVPatternApp.swift in Sources */,
 				2F4EA8B22BFB3221009707FD /* SubBreed.swift in Sources */,
 				2F4EA8C32BFB4F36009707FD /* AppAction+BreedList.swift in Sources */,
 				2F7867E82C00DFF5006581A7 /* RealmBreed.swift in Sources */,
 				2F4EA8B02BFB320B009707FD /* BreedList.swift in Sources */,
+				2F53203F2C0DBBEB001FD9FB /* DogImageScreen.swift in Sources */,
 				2F35F6432C0B1DA300483FE4 /* BreedListRow.swift in Sources */,
 				2F4EA8A22BFB05E3009707FD /* API.swift in Sources */,
 				2F4EA8C12BFB4F26009707FD /* AppActions.swift in Sources */,
+				2F5320472C0DBEEE001FD9FB /* AppActions+DogImage.swift in Sources */,
+				2F5320452C0DBD80001FD9FB /* DogImageResouce.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

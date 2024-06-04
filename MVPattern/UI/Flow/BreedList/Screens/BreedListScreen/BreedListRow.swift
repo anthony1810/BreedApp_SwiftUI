@@ -21,17 +21,29 @@ struct BreedListRow: View {
                 isExpanded: $isExpanded,
                 content: {
                     ForEach(subBreeds, id: \.self) { subBreed in
-                        if let sub = subBreed.subBreed {
-                            Text(sub)
-                        } else {
-                            Text(subBreed.breed)
+                        NavigationLink(value: BreedListScreenDestination.breedImage(breed: subBreed)) {
+                            if let sub = subBreed.subBreed {
+                                Text(sub)
+                            } else {
+                                Text(subBreed.breed)
+                            }
                         }
                     }
                 },
-                label: { Text(breed.breed) }
+                label: {
+                   NavigationLink(
+                    value: BreedListScreenDestination.breedImage(breed: breed),
+                    label: {
+                        Text(breed.breed)
+                    }
+                   )
+                }
             )
         case let .concrete(breed):
-            Text(breed.breed)
+            NavigationLink(
+                value: BreedListScreenDestination.breedImage(breed: breed),
+                label: { Text(breed.breed) }
+            )
         }
     }
 }
