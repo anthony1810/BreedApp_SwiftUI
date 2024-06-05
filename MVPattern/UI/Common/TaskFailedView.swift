@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct TaskFailedView: View {
+    let errorDescription: String
+    
     var body: some View {
-        Image(systemName: "xmark")
-            .symbolRenderingMode(.multicolor)
-            .imageScale(.large)
-            .padding()
+        VStack {
+            Image(systemName: "xmark")
+                .symbolRenderingMode(.multicolor)
+                .imageScale(.large)
+                .padding()
+            Text(errorDescription)
+        }
     }
 }
 
 #Preview {
-    TaskFailedView()
+    TaskFailedView(errorDescription: "could not fetch data")
 }

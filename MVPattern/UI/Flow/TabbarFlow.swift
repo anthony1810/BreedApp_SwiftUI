@@ -31,6 +31,16 @@ private struct _Content<Container: AppContainer>: View {
                 .tabItem {
                     Label("Breeds", systemImage: "dog")
                 }
+            FavoritesFlow(container: flow.container)
+                .tabItem {
+                    Label("Favorites", systemImage: "star")
+                }
         }
+    }
+}
+
+#Preview {
+    WithMockContainer(.app) { container in
+        TabbarFlow(container: container)
     }
 }

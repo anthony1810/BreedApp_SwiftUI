@@ -12,12 +12,15 @@ final class MockAppContainer: MockDependencyContainer, AppContainer {
     struct Configuration {
         var breeds: BreedList
         var defaultImage: DogImageResouce?
+        var favoriteItems: [FavoriteItem]
         
         init(breeds: BreedList = .mock,
-             defaultImage: DogImageResouce? = .mock
+             defaultImage: DogImageResouce? = .mock,
+             favoriteItems: [FavoriteItem] = .mocks
         ) {
             self.breeds = breeds
             self.defaultImage = defaultImage
+            self.favoriteItems = favoriteItems
         }
     }
     
@@ -43,6 +46,10 @@ final class MockAppContainer: MockDependencyContainer, AppContainer {
     
     func makeBreedListScreenFactory() -> some BreedListScreenFactory {
         MockBreedListScreenFactory(breeds: configuration.breeds.map())
+    }
+    
+    func makeFavoritesScreenFactory() -> some FavoritesScreenFactory {
+        MockFavoritesScreenFactory(items: configuration.favoriteItems)
     }
 }
 

@@ -11,8 +11,11 @@ import SwiftUI
 protocol AppContainer: DependencyContainer {
     var app: AppDependency { get }
     
-    associatedtype ScreenFactory: BreedListScreenFactory
-    func makeBreedListScreenFactory() -> ScreenFactory
+    associatedtype ConcreteBreedListScreenFactory: BreedListScreenFactory
+    func makeBreedListScreenFactory() -> ConcreteBreedListScreenFactory
+    
+    associatedtype ConcreteFavoritesScreenFactory: FavoritesScreenFactory
+    func makeFavoritesScreenFactory() -> ConcreteFavoritesScreenFactory
 }
 
 extension AppContainer {

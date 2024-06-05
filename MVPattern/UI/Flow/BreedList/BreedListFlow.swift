@@ -27,7 +27,7 @@ private struct _Content<Container: AppContainer>: View {
                     .makeBreedListScreenFactory()
             )
             .navigationTitle("Breeds")
-            .navigationDestination(for: BreedListScreenDestination.self) { destination in
+            .navigationDestination(for: ScreenDestination.self) { destination in
                 switch destination {
                 case let .breedImage(breed):
                     DogImageScreen(image: DogImage.breed(breed))
@@ -39,7 +39,7 @@ private struct _Content<Container: AppContainer>: View {
 }
     
 // MARK: - Navigations
-enum BreedListScreenDestination: Hashable {
+enum ScreenDestination: Hashable {
     case breedImage(breed: ConcreteBreed)
 }
     

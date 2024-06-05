@@ -30,7 +30,7 @@ struct DogImageView: View {
                         .resizable()
                         .scaledToFit()
                 case .failure(let error):
-                    TaskFailedView()
+                    TaskFailedView(errorDescription: error.localizedDescription)
                 @unknown default:
                     ProgressView()
                 }

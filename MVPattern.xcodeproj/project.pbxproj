@@ -49,6 +49,8 @@
 		2F70FFD72C0F09EC00D471A6 /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFD62C0F09EC00D471A6 /* FavoritesService.swift */; };
 		2F70FFD92C0F0ABC00D471A6 /* RandomImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFD82C0F0ABC00D471A6 /* RandomImageRequest.swift */; };
 		2F70FFDB2C0F0D7A00D471A6 /* BreedImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFDA2C0F0D7A00D471A6 /* BreedImageRequest.swift */; };
+		2F70FFE02C0F4F0400D471A6 /* FavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFDF2C0F4F0400D471A6 /* FavoriteItem.swift */; };
+		2F70FFE22C0F4F5600D471A6 /* RealmFavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFE12C0F4F5600D471A6 /* RealmFavoriteItem.swift */; };
 		2F7867DE2C00D016006581A7 /* BreedsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7867DD2C00D016006581A7 /* BreedsListService.swift */; };
 		2F7867E62C00DDA9006581A7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F7867E52C00DDA9006581A7 /* RealmSwift */; };
 		2F7867E82C00DFF5006581A7 /* RealmBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7867E72C00DFF5006581A7 /* RealmBreed.swift */; };
@@ -61,6 +63,13 @@
 		2FA6937A2C02EE4B00BA3FD9 /* ConcreteBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA693792C02EE4B00BA3FD9 /* ConcreteBreed.swift */; };
 		2FA98D792BFF87D10003A758 /* TabbarFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA98D782BFF87D10003A758 /* TabbarFlow.swift */; };
 		2FA98D7B2BFF8C7F0003A758 /* MVLiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA98D7A2BFF8C7F0003A758 /* MVLiveApp.swift */; };
+		2FEE1FF32C100435000C2C72 /* FavoritesScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE1FF22C100435000C2C72 /* FavoritesScreenData.swift */; };
+		2FEE1FF52C1004E9000C2C72 /* RealmFavoritesScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE1FF42C1004E9000C2C72 /* RealmFavoritesScreenData.swift */; };
+		2FEE1FFA2C100A94000C2C72 /* FavoritesScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE1FF92C100A94000C2C72 /* FavoritesScreenFactory.swift */; };
+		2FEE1FFC2C100BA8000C2C72 /* RealmFavoritesScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE1FFB2C100BA8000C2C72 /* RealmFavoritesScreenFactory.swift */; };
+		2FEE1FFE2C100C81000C2C72 /* FavoritesFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE1FFD2C100C81000C2C72 /* FavoritesFlow.swift */; };
+		2FEE20012C100D65000C2C72 /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE20002C100D65000C2C72 /* FavoritesScreen.swift */; };
+		2FEE20032C10124F000C2C72 /* FavoritesGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE20022C10124F000C2C72 /* FavoritesGridItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +116,8 @@
 		2F70FFD62C0F09EC00D471A6 /* FavoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
 		2F70FFD82C0F0ABC00D471A6 /* RandomImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageRequest.swift; sourceTree = "<group>"; };
 		2F70FFDA2C0F0D7A00D471A6 /* BreedImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageRequest.swift; sourceTree = "<group>"; };
+		2F70FFDF2C0F4F0400D471A6 /* FavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItem.swift; sourceTree = "<group>"; };
+		2F70FFE12C0F4F5600D471A6 /* RealmFavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFavoriteItem.swift; sourceTree = "<group>"; };
 		2F7867DD2C00D016006581A7 /* BreedsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListService.swift; sourceTree = "<group>"; };
 		2F7867E72C00DFF5006581A7 /* RealmBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreed.swift; sourceTree = "<group>"; };
 		2F7867E92C00DFFF006581A7 /* RealmBreedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmBreedList.swift; sourceTree = "<group>"; };
@@ -118,6 +129,13 @@
 		2FA693792C02EE4B00BA3FD9 /* ConcreteBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteBreed.swift; sourceTree = "<group>"; };
 		2FA98D782BFF87D10003A758 /* TabbarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFlow.swift; sourceTree = "<group>"; };
 		2FA98D7A2BFF8C7F0003A758 /* MVLiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVLiveApp.swift; sourceTree = "<group>"; };
+		2FEE1FF22C100435000C2C72 /* FavoritesScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreenData.swift; sourceTree = "<group>"; };
+		2FEE1FF42C1004E9000C2C72 /* RealmFavoritesScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFavoritesScreenData.swift; sourceTree = "<group>"; };
+		2FEE1FF92C100A94000C2C72 /* FavoritesScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreenFactory.swift; sourceTree = "<group>"; };
+		2FEE1FFB2C100BA8000C2C72 /* RealmFavoritesScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFavoritesScreenFactory.swift; sourceTree = "<group>"; };
+		2FEE1FFD2C100C81000C2C72 /* FavoritesFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesFlow.swift; sourceTree = "<group>"; };
+		2FEE20002C100D65000C2C72 /* FavoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreen.swift; sourceTree = "<group>"; };
+		2FEE20022C10124F000C2C72 /* FavoritesGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesGridItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,15 +291,11 @@
 		2F4EA8AC2BFB31DD009707FD /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				2F4EA8AD2BFB31FD009707FD /* Breed.swift */,
-				2F4EA8B12BFB3221009707FD /* SubBreed.swift */,
-				2F4EA8AF2BFB320B009707FD /* BreedList.swift */,
+				2F70FFDE2C0F4EEF00D471A6 /* Favorite */,
+				2F70FFDD2C0F4EDA00D471A6 /* DogImage */,
+				2F70FFDC2C0F4EC000D471A6 /* Breed */,
 				2F4EA8CF2BFB5098009707FD /* DisplayableError.swift */,
-				2FA693702C02E85700BA3FD9 /* BreedListItem.swift */,
-				2FA693792C02EE4B00BA3FD9 /* ConcreteBreed.swift */,
-				2F5320402C0DBC26001FD9FB /* DogImage.swift */,
 				2F5320422C0DBC75001FD9FB /* LoadingState.swift */,
-				2F5320442C0DBD80001FD9FB /* DogImageResouce.swift */,
 				2F5320482C0DBFDE001FD9FB /* ErrorMessage.swift */,
 			);
 			path = Entities;
@@ -292,6 +306,7 @@
 			children = (
 				2F7867E72C00DFF5006581A7 /* RealmBreed.swift */,
 				2F7867E92C00DFFF006581A7 /* RealmBreedList.swift */,
+				2F70FFE12C0F4F5600D471A6 /* RealmFavoriteItem.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -366,6 +381,46 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		2F70FFDC2C0F4EC000D471A6 /* Breed */ = {
+			isa = PBXGroup;
+			children = (
+				2F4EA8AD2BFB31FD009707FD /* Breed.swift */,
+				2F4EA8B12BFB3221009707FD /* SubBreed.swift */,
+				2F4EA8AF2BFB320B009707FD /* BreedList.swift */,
+				2FA693702C02E85700BA3FD9 /* BreedListItem.swift */,
+				2FA693792C02EE4B00BA3FD9 /* ConcreteBreed.swift */,
+			);
+			path = Breed;
+			sourceTree = "<group>";
+		};
+		2F70FFDD2C0F4EDA00D471A6 /* DogImage */ = {
+			isa = PBXGroup;
+			children = (
+				2F5320402C0DBC26001FD9FB /* DogImage.swift */,
+				2F5320442C0DBD80001FD9FB /* DogImageResouce.swift */,
+			);
+			path = DogImage;
+			sourceTree = "<group>";
+		};
+		2F70FFDE2C0F4EEF00D471A6 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				2F70FFDF2C0F4F0400D471A6 /* FavoriteItem.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		2F70FFE32C0F5EBB00D471A6 /* FavoritesFlow */ = {
+			isa = PBXGroup;
+			children = (
+				2FEE1FFD2C100C81000C2C72 /* FavoritesFlow.swift */,
+				2FEE1FFF2C100D3C000C2C72 /* Screens */,
+				2FEE1FF82C100A70000C2C72 /* ScreenFactory */,
+				2FEE1FF72C100959000C2C72 /* ScreenData */,
+			);
+			path = FavoritesFlow;
+			sourceTree = "<group>";
+		};
 		2FA693742C02EB2A00BA3FD9 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,9 +434,37 @@
 			isa = PBXGroup;
 			children = (
 				2FA98D782BFF87D10003A758 /* TabbarFlow.swift */,
+				2F70FFE32C0F5EBB00D471A6 /* FavoritesFlow */,
 				2F3BA3142C08354C00C9DBF5 /* BreedList */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		2FEE1FF72C100959000C2C72 /* ScreenData */ = {
+			isa = PBXGroup;
+			children = (
+				2FEE1FF22C100435000C2C72 /* FavoritesScreenData.swift */,
+				2FEE1FF42C1004E9000C2C72 /* RealmFavoritesScreenData.swift */,
+			);
+			path = ScreenData;
+			sourceTree = "<group>";
+		};
+		2FEE1FF82C100A70000C2C72 /* ScreenFactory */ = {
+			isa = PBXGroup;
+			children = (
+				2FEE1FF92C100A94000C2C72 /* FavoritesScreenFactory.swift */,
+				2FEE1FFB2C100BA8000C2C72 /* RealmFavoritesScreenFactory.swift */,
+			);
+			path = ScreenFactory;
+			sourceTree = "<group>";
+		};
+		2FEE1FFF2C100D3C000C2C72 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2FEE20002C100D65000C2C72 /* FavoritesScreen.swift */,
+				2FEE20022C10124F000C2C72 /* FavoritesGridItem.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,20 +551,25 @@
 				2F3BA3182C08380000C9DBF5 /* RealmBreedListScreenFactory.swift in Sources */,
 				2F3BA31B2C0838E400C9DBF5 /* RealmBreedListScreenData.swift in Sources */,
 				2F4EA8AB2BFB0B4B009707FD /* BreedListRequest.swift in Sources */,
+				2F70FFE02C0F4F0400D471A6 /* FavoriteItem.swift in Sources */,
 				2F4EA8BD2BFB4527009707FD /* MockDependencyContainer.swift in Sources */,
 				2F70FFDB2C0F0D7A00D471A6 /* BreedImageRequest.swift in Sources */,
 				2F4EA8C72BFB4F54009707FD /* AppDependency.swift in Sources */,
 				2F4EA8A82BFB0612009707FD /* APIResponse.swift in Sources */,
 				2F5320432C0DBC75001FD9FB /* LoadingState.swift in Sources */,
+				2FEE1FFC2C100BA8000C2C72 /* RealmFavoritesScreenFactory.swift in Sources */,
 				2FA6937A2C02EE4B00BA3FD9 /* ConcreteBreed.swift in Sources */,
 				2F5320412C0DBC26001FD9FB /* DogImage.swift in Sources */,
 				2F4EA8A62BFB0606009707FD /* APIRequests.swift in Sources */,
+				2FEE20032C10124F000C2C72 /* FavoritesGridItem.swift in Sources */,
 				2F7867DE2C00D016006581A7 /* BreedsListService.swift in Sources */,
 				2FA693712C02E85700BA3FD9 /* BreedListItem.swift in Sources */,
 				2FA693732C02E8E700BA3FD9 /* BreedListScreenFactory.swift in Sources */,
 				2F70FFD02C0F01AF00D471A6 /* DogImageView.swift in Sources */,
 				2FA693782C02EB6600BA3FD9 /* BreedListScreen.swift in Sources */,
+				2F70FFE22C0F4F5600D471A6 /* RealmFavoriteItem.swift in Sources */,
 				2F4EA8C92BFB4F63009707FD /* MockAppContainer.swift in Sources */,
+				2FEE1FFE2C100C81000C2C72 /* FavoritesFlow.swift in Sources */,
 				2F4EA8BB2BFB3BF2009707FD /* DependencyContainer.swift in Sources */,
 				2F4EA8D02BFB5098009707FD /* DisplayableError.swift in Sources */,
 				2F4EA8CC2BFB5017009707FD /* AppState.swift in Sources */,
@@ -491,13 +579,17 @@
 				2FA693762C02EB4200BA3FD9 /* WithProperty.swift in Sources */,
 				2F5320492C0DBFDE001FD9FB /* ErrorMessage.swift in Sources */,
 				2F53204B2C0DC9F8001FD9FB /* DogImageFavoriteButton.swift in Sources */,
+				2FEE1FF52C1004E9000C2C72 /* RealmFavoritesScreenData.swift in Sources */,
 				2F4EA8B92BFB3B72009707FD /* Dependency.swift in Sources */,
+				2FEE20012C100D65000C2C72 /* FavoritesScreen.swift in Sources */,
 				2F4EA8B72BFB39D8009707FD /* ViewInjectable.swift in Sources */,
+				2FEE1FF32C100435000C2C72 /* FavoritesScreenData.swift in Sources */,
 				2F4EA8CE2BFB504B009707FD /* AppState+ErrorAlert.swift in Sources */,
 				2F53204F2C0DCDC4001FD9FB /* OnFirstAppear.swift in Sources */,
 				2F70FFD32C0F026900D471A6 /* TaskFailedView.swift in Sources */,
 				2F53204D2C0DCC32001FD9FB /* AppActions+Favorites.swift in Sources */,
 				2F70FFD72C0F09EC00D471A6 /* FavoritesService.swift in Sources */,
+				2FEE1FFA2C100A94000C2C72 /* FavoritesScreenFactory.swift in Sources */,
 				2FA98D792BFF87D10003A758 /* TabbarFlow.swift in Sources */,
 				2F4EA88F2BFB0310009707FD /* MVPatternApp.swift in Sources */,
 				2F4EA8B22BFB3221009707FD /* SubBreed.swift in Sources */,
