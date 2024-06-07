@@ -1,3 +1,14 @@
+# Introduction
+I have developed multiple SwiftUI apps, ranging from small to large, available on the App Store.
+In all of them, I use MVVM-C, a pattern I have relied on to develop UIKit apps for most of my career. 
+I can't complain; it works well with UIKit apps, whether using Combine or RxSwift.
+
+However, I always felt something was missing, something unnatural. 
+It seemed like I was bending SwiftUI to fit MVVM, which was often inconvenient.
+
+Then I read [Stop Using MVVM for SwiftUI](https://forums.developer.apple.com/forums/thread/699003), and that’s when I discovered the [SwiftUI First pattern](https://apurin.me/articles/swiftui-first/). 
+This project demonstrates the power of this pattern and marks my transition away from MVVM for SwiftUI.
+
 # DogBreed App
 
 DogBreed App is a mobile application developed using Swift and SwiftUI that allows users to identify different breeds of dogs. This project implements the SwiftUI First design pattern as outlined in [this article](https://apurin.me/articles/swiftui-first/).
