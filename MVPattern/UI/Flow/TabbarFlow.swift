@@ -31,14 +31,18 @@ private struct _Content<Container: AppContainer>: View {
                 .tabItem {
                     Label("Random", systemImage: "photo")
                 }
+            
             BreedListFlow(container: flow.container)
                 .tabItem {
                     Label("Breeds", systemImage: "dog")
                 }
+            
             FavoritesFlow(container: flow.container)
                 .tabItem {
                     Label("Favorites", systemImage: "star")
                 }
+            SettingsFlow(container: flow.container)
+                .tabItem { Label("Settings", systemImage: "gear") }
         }
     }
 }
