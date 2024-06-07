@@ -10,6 +10,7 @@ import SwiftUI
 struct FavoritesScreen<Factory: FavoritesScreenFactory>: View {
     
     let factory: Factory
+    @AppStorage(SettingsKey.Favorites.prefersFill) var prefersFill = false
     
     var body: some View {
         WithProperty(factory.makeScreenData()) { screenData in
@@ -25,6 +26,24 @@ struct FavoritesScreen<Factory: FavoritesScreenFactory>: View {
                     }
                 }
             }
+        }
+        .toolbar(content: {
+            leftToolBarContent
+        })
+    }
+    
+    var leftToolBarContent: some ToolbarContent {
+        ToolbarItem(placement: .topBarTrailing) {
+            Button(action: {
+                prefersFill.toggle()
+            }, label: {
+                Label(
+                    prefersFill ? "Fit" : "Fill",
+                    systemImage: prefersFill 
+                    ? "arrow.down.right.and.arrow.up.left"
+                    : "arrow.up.left.and.arrow.down.right"
+                )
+            })
         }
     }
 }
