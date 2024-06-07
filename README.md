@@ -96,7 +96,7 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Acknowledgements
 
-Thanks to Apurin.me for the insightful article on the SwiftUI First design pattern.
+Thanks to [Apurin.me](https://apurin.me) for the insightful article on the SwiftUI First design pattern.
 
 ## Contact
 For any inquiries or feedback, feel free to reach out to [qquang269@gmail.com].
