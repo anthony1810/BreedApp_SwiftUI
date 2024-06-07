@@ -16,7 +16,7 @@ DogBreed App is a mobile application developed using Swift and SwiftUI that allo
 ## Features
 
 - **SwiftUI First Pattern**: The app is structured following the principles of the SwiftUI First design pattern, which emphasizes SwiftUI as the primary framework for building UI components.
-- **Dog Breed Identification**: Users can upload images of dogs and the app will identify the breed.
+- **Dog Breed Identification**: Users can fetch random images of different dog breeds, save those images, and learn about all dog breeds.
 - **User-Friendly Interface**: The app features a clean and intuitive UI, making it easy for users to navigate and use.
 
 ## Why SwiftUI First?
