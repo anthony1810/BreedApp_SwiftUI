@@ -10,18 +10,28 @@ import SwiftUI
 struct SettingsScreen: View {
     
     @Environment(\.appActions.favorites) private var favorites
+    @AppStorage(SettingsKey.Welcome.didShow) private var didShowWelcome = false
     
     @State private var showResetFavoriteDialog = false
+    @State private var showResetWelcomeDialog = false
     
     var body: some View {
         List {
-            Section("Favorites") {
+            Section("App Settings") {
                 Button("Reset Favorites", role: .destructive) {
                     showResetFavoriteDialog = true
                 }
                 .confirmationDialog("Reset Favorites?", isPresented: $showResetFavoriteDialog) {
                     Button("Reset Favorites", role: .destructive) {
                         favorites.reset()
+                    }
+                }
+                Button("Show Welcome Screen") {
+                    showResetWelcomeDialog = true
+                }
+                .confirmationDialog("Reset Welcome Screen?", isPresented: $showResetWelcomeDialog) {
+                    Button("Show Welcome Screen") {
+                        didShowWelcome = false
                     }
                 }
             }

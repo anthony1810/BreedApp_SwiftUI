@@ -22,28 +22,42 @@ struct TabbarFlow<Container: AppContainer>: View {
 private struct _Content<Container: AppContainer>: View {
     
     @Environment(\.appActions.breedList) private var breedListActions
+    @AppStorage(SettingsKey.Welcome.didShow) private var didShowWelcome = false
     
     let flow: TabbarFlow<Container>
     
     var body: some View {
-        TabView {
-            RandomImageFlow(container: flow.container)
-                .tabItem {
-                    Label("Random", systemImage: "photo")
+        ZStack {
+            if didShowWelcome {
+                TabView {
+                    RandomImageFlow(container: flow.container)
+                        .tabItem {
+                            Label("Random", systemImage: "photo")
+                        }
+                    
+                    BreedListFlow(container: flow.container)
+                        .tabItem {
+                            Label("Breeds", systemImage: "dog")
+                        }
+                    
+                    FavoritesFlow(container: flow.container)
+                        .tabItem {
+                            
+                            Label("Favorites", systemImage: "star")
+                        }
+                    
+                    SettingsFlow(container: flow.container)
+                        .tabItem {
+                            Label("Settings", systemImage: "gear")
+                        }
                 }
-            
-            BreedListFlow(container: flow.container)
-                .tabItem {
-                    Label("Breeds", systemImage: "dog")
-                }
-            
-            FavoritesFlow(container: flow.container)
-                .tabItem {
-                    Label("Favorites", systemImage: "star")
-                }
-            SettingsFlow(container: flow.container)
-                .tabItem { Label("Settings", systemImage: "gear") }
+                .transition(.asymmetric(insertion: .slide, removal: .scale))
+            } else {
+                WelcomeScreen()
+                    .transition(.asymmetric(insertion: .slide, removal: .scale))
+            }
         }
+        .animation(.bouncy, value: didShowWelcome)
     }
 }
 

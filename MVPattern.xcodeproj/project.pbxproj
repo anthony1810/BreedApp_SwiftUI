@@ -46,6 +46,9 @@
 		2F568D082C12BFCE008C138E /* RandomImageFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F568D072C12BFCE008C138E /* RandomImageFlow.swift */; };
 		2F568D0B2C12C499008C138E /* SettingsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F568D0A2C12C499008C138E /* SettingsFlow.swift */; };
 		2F568D0D2C12C666008C138E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F568D0C2C12C666008C138E /* SettingsScreen.swift */; };
+		2F568D0F2C12F091008C138E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F568D0E2C12F091008C138E /* AppSettings.swift */; };
+		2F568D122C12F1DB008C138E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F568D112C12F1DB008C138E /* UserDefaults.swift */; };
+		2F568D142C12F2D7008C138E /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F568D132C12F2D7008C138E /* WelcomeScreen.swift */; };
 		2F70FFD02C0F01AF00D471A6 /* DogImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFCF2C0F01AF00D471A6 /* DogImageView.swift */; };
 		2F70FFD32C0F026900D471A6 /* TaskFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFD22C0F026900D471A6 /* TaskFailedView.swift */; };
 		2F70FFD52C0F09DF00D471A6 /* DogImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F70FFD42C0F09DF00D471A6 /* DogImageService.swift */; };
@@ -116,6 +119,9 @@
 		2F568D072C12BFCE008C138E /* RandomImageFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageFlow.swift; sourceTree = "<group>"; };
 		2F568D0A2C12C499008C138E /* SettingsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFlow.swift; sourceTree = "<group>"; };
 		2F568D0C2C12C666008C138E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		2F568D0E2C12F091008C138E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		2F568D112C12F1DB008C138E /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		2F568D132C12F2D7008C138E /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		2F70FFCF2C0F01AF00D471A6 /* DogImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageView.swift; sourceTree = "<group>"; };
 		2F70FFD22C0F026900D471A6 /* TaskFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFailedView.swift; sourceTree = "<group>"; };
 		2F70FFD42C0F09DF00D471A6 /* DogImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageService.swift; sourceTree = "<group>"; };
@@ -236,6 +242,7 @@
 		2F4EA89C2BFB0569009707FD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2F568D102C12F1A0008C138E /* Extensions */,
 				2FA693742C02EB2A00BA3FD9 /* Utility */,
 				2F4EA8B52BFB39C5009707FD /* Dependency */,
 				2F4EA8AC2BFB31DD009707FD /* Entities */,
@@ -303,6 +310,7 @@
 				2F4EA8CF2BFB5098009707FD /* DisplayableError.swift */,
 				2F5320422C0DBC75001FD9FB /* LoadingState.swift */,
 				2F5320482C0DBFDE001FD9FB /* ErrorMessage.swift */,
+				2F568D0E2C12F091008C138E /* AppSettings.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -375,6 +383,14 @@
 				2F568D0C2C12C666008C138E /* SettingsScreen.swift */,
 			);
 			path = SettingsFlow;
+			sourceTree = "<group>";
+		};
+		2F568D102C12F1A0008C138E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F568D112C12F1DB008C138E /* UserDefaults.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2F70FFCD2C0F018300D471A6 /* BreedListScreen */ = {
@@ -457,6 +473,7 @@
 			isa = PBXGroup;
 			children = (
 				2FA98D782BFF87D10003A758 /* TabbarFlow.swift */,
+				2F568D132C12F2D7008C138E /* WelcomeScreen.swift */,
 				2F568D092C12C486008C138E /* SettingsFlow */,
 				2F568D062C12BFA6008C138E /* RandomImageFlow */,
 				2F70FFE32C0F5EBB00D471A6 /* FavoritesFlow */,
@@ -586,6 +603,7 @@
 				2FEE1FFC2C100BA8000C2C72 /* RealmFavoritesScreenFactory.swift in Sources */,
 				2FA6937A2C02EE4B00BA3FD9 /* ConcreteBreed.swift in Sources */,
 				2F5320412C0DBC26001FD9FB /* DogImage.swift in Sources */,
+				2F568D142C12F2D7008C138E /* WelcomeScreen.swift in Sources */,
 				2F4EA8A62BFB0606009707FD /* APIRequests.swift in Sources */,
 				2FEE20032C10124F000C2C72 /* FavoritesGridItem.swift in Sources */,
 				2F7867DE2C00D016006581A7 /* BreedsListService.swift in Sources */,
@@ -598,6 +616,7 @@
 				2FEE1FFE2C100C81000C2C72 /* FavoritesFlow.swift in Sources */,
 				2F4EA8BB2BFB3BF2009707FD /* DependencyContainer.swift in Sources */,
 				2F4EA8D02BFB5098009707FD /* DisplayableError.swift in Sources */,
+				2F568D0F2C12F091008C138E /* AppSettings.swift in Sources */,
 				2F4EA8CC2BFB5017009707FD /* AppState.swift in Sources */,
 				2F70FFD92C0F0ABC00D471A6 /* RandomImageRequest.swift in Sources */,
 				2F3BA3162C08358900C9DBF5 /* BreedListFlow.swift in Sources */,
@@ -623,6 +642,7 @@
 				2F4EA8C32BFB4F36009707FD /* AppAction+BreedList.swift in Sources */,
 				2F7867E82C00DFF5006581A7 /* RealmBreed.swift in Sources */,
 				2F4EA8B02BFB320B009707FD /* BreedList.swift in Sources */,
+				2F568D122C12F1DB008C138E /* UserDefaults.swift in Sources */,
 				2F53203F2C0DBBEB001FD9FB /* DogImageScreen.swift in Sources */,
 				2F35F6432C0B1DA300483FE4 /* BreedListRow.swift in Sources */,
 				2F4EA8A22BFB05E3009707FD /* API.swift in Sources */,
