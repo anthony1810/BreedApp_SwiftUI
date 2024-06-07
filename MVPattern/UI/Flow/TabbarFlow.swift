@@ -27,6 +27,10 @@ private struct _Content<Container: AppContainer>: View {
     
     var body: some View {
         TabView {
+            RandomImageFlow(container: flow.container)
+                .tabItem {
+                    Label("Random", systemImage: "photo")
+                }
             BreedListFlow(container: flow.container)
                 .tabItem {
                     Label("Breeds", systemImage: "dog")

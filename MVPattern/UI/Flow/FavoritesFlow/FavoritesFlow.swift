@@ -12,14 +12,15 @@ struct FavoritesFlow<Container: AppContainer>: View {
     
     let container: Container
     var body: some View {
-        FavoritesFlowContent(flow: self)
+        _Content(flow: self)
             .dependency(container)
     }
 }
 
-struct FavoritesFlowContent<Container: AppContainer>: View {
+private struct _Content<Container: AppContainer>: View {
     
     let flow: FavoritesFlow<Container>
+    
     var body: some View {
         NavigationStack {
             FavoritesScreen(factory: flow.container.makeFavoritesScreenFactory())
