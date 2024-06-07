@@ -10,7 +10,12 @@ import SwiftUI
 struct FavoritesScreen<Factory: FavoritesScreenFactory>: View {
     
     let factory: Factory
+    
     @AppStorage(SettingsKey.Favorites.prefersFill) var prefersFill = false
+    
+    @State private var selectedItem: FavoriteItem? = nil
+    @State private var selectedItemString: String? = nil
+    @Namespace private var selectedImageNamespace
     
     var body: some View {
         WithProperty(factory.makeScreenData()) { screenData in
@@ -22,9 +27,16 @@ struct FavoritesScreen<Factory: FavoritesScreenFactory>: View {
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 100, maximum: 200))]) {
                         ForEach(screenData.items) { item in
                             FavoritesGridItem(item: screenData.item(item))
+                                .matchedGeometryEffect(id: item.id, in: selectedImageNamespace)
+                                .onTapGesture {
+                                    selectedItem = screenData.item(item)
+                                    selectedItemString = screenData.item(item).resource.remoteURL?.absoluteString
+                                }
                         }
                     }
                 }
+                .overlay(overlayContent)
+                .animation(.default, value: selectedItemString)
             }
         }
         .toolbar(content: {
@@ -44,6 +56,23 @@ struct FavoritesScreen<Factory: FavoritesScreenFactory>: View {
                     : "arrow.up.left.and.arrow.down.right"
                 )
             })
+        }
+    }
+    
+    var overlayContent: some View {
+        Group {
+            if let aSelectedItem = selectedItem {
+                FavoritesGridItem(item: aSelectedItem)
+                    .matchedGeometryEffect(id: aSelectedItem.id, in: selectedImageNamespace)
+                    .background(Material.thin)
+                    .animation(.easeInOut, value: selectedItemString)
+                    .onTapGesture {
+                        selectedItem = nil
+                        selectedItemString = nil
+                    }
+            } else {
+                Color.clear
+            }
         }
     }
 }
