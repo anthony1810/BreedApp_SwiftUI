@@ -1,3 +1,14 @@
+# Introduction
+I have developed multiple SwiftUI apps, ranging from small to large, available on the App Store.
+In all of them, I use MVVM-C, a pattern I have relied on to develop UIKit apps for most of my career. 
+I can't complain; it works well with UIKit apps, whether using Combine or RxSwift.
+
+However, I always felt something was missing, something unnatural. 
+It seemed like I was bending SwiftUI to fit MVVM, which was often inconvenient.
+
+Then I read [Stop Using MVVM for SwiftUI](https://forums.developer.apple.com/forums/thread/699003), and that’s when I discovered the [SwiftUI First pattern](https://apurin.me/articles/swiftui-first/). 
+This project demonstrates the power of this pattern and marks my transition away from MVVM for SwiftUI.
+
 # DogBreed App
 
 DogBreed App is a mobile application developed using Swift and SwiftUI that allows users to identify different breeds of dogs. This project implements the SwiftUI First design pattern as outlined in [this article](https://apurin.me/articles/swiftui-first/).
@@ -5,7 +16,7 @@ DogBreed App is a mobile application developed using Swift and SwiftUI that allo
 ## Features
 
 - **SwiftUI First Pattern**: The app is structured following the principles of the SwiftUI First design pattern, which emphasizes SwiftUI as the primary framework for building UI components.
-- **Dog Breed Identification**: Users can upload images of dogs and the app will identify the breed.
+- **Dog Breed Identification**: Users can fetch random images of different dog breeds, save those images, and learn about all dog breeds.
 - **User-Friendly Interface**: The app features a clean and intuitive UI, making it easy for users to navigate and use.
 
 ## Why SwiftUI First?
@@ -85,7 +96,7 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Acknowledgements
 
-Thanks to Apurin.me for the insightful article on the SwiftUI First design pattern.
+Thanks to [Apurin.me](https://apurin.me) for the insightful article on the SwiftUI First design pattern.
 
 ## Contact
 For any inquiries or feedback, feel free to reach out to [qquang269@gmail.com].
